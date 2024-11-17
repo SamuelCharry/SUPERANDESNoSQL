@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "f8ada631-45f4-4209-9d74-a18e5e97f8f2",
+		"name": "Requerimientos Funcionales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38222574"
+	},
+	"item": [
+		{
+			"name": "RF1 CREAR SUCURSAL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Sucursal augusto\",\r\n    \"tamanio\": 1000,\r\n    \"direccion\": \"Calle 123123214\",\r\n    \"telefono\": 987654,\r\n    \"codigo_ciudad\": {\r\n        \"codigo\": 1,\r\n        \"nombre\": \"Bogotá\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sucursales/new/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sucursales",
+						"new",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF2 CREAR UNA BODEGA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Bodega AUGUSTO\",\r\n    \"tamanio\": 500,\r\n    \"nombre_sucursal\": {\r\n        \"_id\": \"Sucursal Norte\",\r\n        \"tamanio\": 1000,\r\n        \"direccion\": \"Calle 123\",\r\n        \"telefono\": 123456789,\r\n        \"codigo_ciudad\": {\r\n            \"codigo\": 1,\r\n            \"nombre\": \"Bogotá\"\r\n        }\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bodegas/new/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bodegas",
+						"new",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF2 BORRAR UNA BODEGA",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bodegas/Bodega%20AUGUSTO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bodegas",
+						"Bodega%20AUGUSTO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF3 CREAR PROVEEDORES",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nit\": 123456,\r\n    \"nombre\": \"Proveedor Principal\",\r\n    \"direccion\": \"Calle 123\",\r\n    \"nombre_contacto\": \"Juan Pérez\",\r\n    \"telefono_contacto\": 987654321\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/proveedores/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proveedores",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF3 ACTUALIZAR PROVEEDORES",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Proveedor Actualizado\",\r\n    \"direccion\": \"Avenida 456\",\r\n    \"nombre_contacto\": \"Ana Gómez\",\r\n    \"telefono_contacto\": 123456789\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/proveedores/update/123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proveedores",
+						"update",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF4 CREAR UNA CATEGORÍA DE PRODUCTO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 201,\r\n    \"nombre\": \"Frutas\",\r\n    \"descripcion\": \"Productos frescos y saludables\",\r\n    \"caracteristicas_almacenamiento\": \"Temperatura ambiente\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/categorias/new/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categorias",
+						"new",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF4 LEER CATEGORÍA NOMBRE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/categorias/nombre/Frutas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categorias",
+						"nombre",
+						"Frutas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF4 LEER CATEGORÍA CODIGO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/categorias/codigo/201",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categorias",
+						"codigo",
+						"201"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
