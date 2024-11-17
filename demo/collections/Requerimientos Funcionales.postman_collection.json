@@ -216,6 +216,77 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "RF5 Crear Producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo_de_barras\": \"skillissue123\",\r\n    \"nombre\": \"Penpinapleapplepen\",\r\n    \"costo_en_bodega\": 1.2,\r\n    \"precio_unitario\": 2,\r\n    \"presentacion\": \"Bolsa\",\r\n    \"cantidad_presentacion\": 10,\r\n    \"unidad_de_medida\": \"kg\",\r\n    \"volumen\": 0.05,\r\n    \"peso\": 10,\r\n    \"categoria_codigo\": {\r\n        \"codigo\": 1,\r\n        \"nombre\": \"Frutas\",\r\n        \"descripcion\": \"Productos frescos y saludables\",\r\n        \"caracteristicas_almacenamiento\": \"Refrigeración entre 2°C y 8°C\"\r\n    }\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF5 Leer Producto por Código",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/codigo/skillissue123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"codigo",
+						"skillissue123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF5 Leer Producto por Nombre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/nombre/Manzanas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"nombre",
+						"Manzanas"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

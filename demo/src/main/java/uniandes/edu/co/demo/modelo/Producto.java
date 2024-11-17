@@ -2,6 +2,8 @@ package uniandes.edu.co.demo.modelo;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.ToString;
 
 @Document(collection="producto")
@@ -10,6 +12,7 @@ public class Producto {
 
     //Atributos
     @Id
+    @JsonProperty("codigo_de_barras") //esto arreglo esa vaina con el json que decia id null, Evita errores cuando los nombres de los campos no coinciden. osea _id y codigo_de_barras
     private String codigo_de_barras;
     private String nombre;
     private Double costo_en_bodega;
@@ -117,6 +120,7 @@ public class Producto {
     public void setPeso(Double peso) {
         this.peso = peso;
     }
+ 
 
     public void setCategoria_codigo(Categoria categoria_codigo) {
         this.categoria_codigo = categoria_codigo;
