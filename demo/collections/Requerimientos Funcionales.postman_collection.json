@@ -93,7 +93,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nit\": 123456,\r\n    \"nombre\": \"Proveedor Principal\",\r\n    \"direccion\": \"Calle 123\",\r\n    \"nombre_contacto\": \"Juan Pérez\",\r\n    \"telefono_contacto\": 987654321\r\n}\r\n",
+					"raw": "// {CASO DE PRUEBA QUE FUNCIONA\r\n//     \"nit\": 123456,\r\n//     \"nombre\": \"Proveedor Principal\",\r\n//     \"direccion\": \"Calle 123\",\r\n//     \"nombre_contacto\": \"Juan Pérez\",\r\n//     \"telefono_contacto\": 987654321\r\n// }\r\n\r\n//CASO DE PRUEBA QUE NO FUNCIONA PARA LA ENTREGA \r\n{\r\n    \"nit\": \"ABC123\",\r\n    \"nombre\": null,\r\n    \"direccion\": \"Calle falsa 123\",\r\n    \"nombre_contacto\": 456,\r\n    \"telefono_contacto\": \"No es un número\"\r\n}\r\n\r\n\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
