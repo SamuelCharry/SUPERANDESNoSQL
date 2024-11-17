@@ -1,0 +1,72 @@
+[
+    {
+        "_id": 1,
+        "fechaCreacion": "2024-01-01T08:00:00Z",
+        "fechaEntrega": "2024-01-10T08:00:00Z",
+        "estado": "Pendiente",
+        "proveedor_nit": { 
+            "nit": "900123456", 
+            "nombre": "Proveedor A" 
+        },
+        "sucursal_nombre": { 
+            "nombre": "Sucursal Norte", 
+            "direccion": "Calle 123" 
+        }
+    },
+    {
+        "_id": 2,
+        "fechaCreacion": "2024-01-05T08:00:00Z",
+        "fechaEntrega": "2024-01-15T08:00:00Z",
+        "estado": "Completada",
+        "proveedor_nit": { 
+            "nit": "900789123", 
+            "nombre": "Proveedor B" 
+        },
+        "sucursal_nombre": { 
+            "nombre": "Sucursal Sur", 
+            "direccion": "Avenida 45" 
+        }
+    },
+    {
+        "_id": 3,
+        "fechaCreacion": "2024-02-01T08:00:00Z",
+        "fechaEntrega": "2024-02-10T08:00:00Z",
+        "estado": "Cancelada",
+        "proveedor_nit": { 
+            "nit": "900567890", 
+            "nombre": "Proveedor C" 
+        },
+        "sucursal_nombre": { 
+            "nombre": "Sucursal Central", 
+            "direccion": "Carrera 67" 
+        }
+    },
+    {
+        "_id": 4,
+        "fechaCreacion": "2024-02-15T08:00:00Z",
+        "fechaEntrega": "2024-02-25T08:00:00Z",
+        "estado": "Pendiente",
+        "proveedor_nit": { 
+            "nit": "900112233", 
+            "nombre": "Proveedor D" 
+        },
+        "sucursal_nombre": { 
+            "nombre": "Sucursal Este", 
+            "direccion": "Diagonal 89" 
+        }
+    },
+    {
+        "_id": 5,
+        "fechaCreacion": "2024-03-01T08:00:00Z",
+        "fechaEntrega": "2024-03-10T08:00:00Z",
+        "estado": "Completada",
+        "proveedor_nit": { 
+            "nit": "900445566", 
+            "nombre": "Proveedor E" 
+        },
+        "sucursal_nombre": { 
+            "nombre": "Sucursal Oeste", 
+            "direccion": "Transversal 10" 
+        }
+    }
+]

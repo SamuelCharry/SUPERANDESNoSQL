@@ -1,0 +1,62 @@
+[
+    {
+        "_id": 1,
+        "nombre": "Frutas y Verduras",
+        "descripcion": "Productos frescos de origen vegetal",
+        "caracteristicas_almacenamiento": "Refrigeración entre 2°C y 8°C"
+    },
+    {
+        "_id": 2,
+        "nombre": "Carnes",
+        "descripcion": "Productos cárnicos crudos y procesados",
+        "caracteristicas_almacenamiento": "Congelación a -18°C"
+    },
+    {
+        "_id": 3,
+        "nombre": "Lácteos",
+        "descripcion": "Productos derivados de la leche",
+        "caracteristicas_almacenamiento": "Refrigeración entre 1°C y 5°C"
+    },
+    {
+        "_id": 4,
+        "nombre": "Bebidas",
+        "descripcion": "Jugos, aguas y refrescos",
+        "caracteristicas_almacenamiento": "Temperatura ambiente o refrigeración según el tipo"
+    },
+    {
+        "_id": 5,
+        "nombre": "Panadería",
+        "descripcion": "Productos horneados como pan y pasteles",
+        "caracteristicas_almacenamiento": "Almacenamiento en lugar fresco y seco"
+    },
+    {
+        "_id": 6,
+        "nombre": "Congelados",
+        "descripcion": "Alimentos listos para cocinar y congelados",
+        "caracteristicas_almacenamiento": "Congelación a -18°C"
+    },
+    {
+        "_id": 7,
+        "nombre": "Higiene",
+        "descripcion": "Productos de limpieza y cuidado personal",
+        "caracteristicas_almacenamiento": "Almacenamiento en lugar fresco y seco"
+    },
+    {
+        "_id": 8,
+        "nombre": "Snacks",
+        "descripcion": "Productos de consumo rápido como papas fritas",
+        "caracteristicas_almacenamiento": "Temperatura ambiente"
+    },
+    {
+        "_id": 9,
+        "nombre": "Cuidado del hogar",
+        "descripcion": "Artículos para el mantenimiento del hogar",
+        "caracteristicas_almacenamiento": "Almacenamiento en lugar fresco y seco"
+    },
+    {
+        "_id": 10,
+        "nombre": "Electrónicos",
+        "descripcion": "Aparatos electrónicos pequeños",
+        "caracteristicas_almacenamiento": "Almacenamiento en lugar fresco y seco"
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "_id": "B001",
+        "nombre": "Bodega Norte",
+        "tamanio": 500,
+        "nombre_sucursal": { "nombre": "Sucursal Norte", "direccion": "Calle 123" }
+    },
+    {
+        "_id": "B002",
+        "nombre": "Bodega Sur",
+        "tamanio": 800,
+        "nombre_sucursal": { "nombre": "Sucursal Sur", "direccion": "Avenida 45" }
+    },
+    {
+        "_id": "B003",
+        "nombre": "Bodega Central",
+        "tamanio": 1000,
+        "nombre_sucursal": { "nombre": "Sucursal Central", "direccion": "Carrera 67" }
+    },
+    {
+        "_id": "B004",
+        "nombre": "Bodega Este",
+        "tamanio": 700,
+        "nombre_sucursal": { "nombre": "Sucursal Este", "direccion": "Diagonal 89" }
+    },
+    {
+        "_id": "B005",
+        "nombre": "Bodega Oeste",
+        "tamanio": 600,
+        "nombre_sucursal": { "nombre": "Sucursal Oeste", "direccion": "Transversal 10" }
+    },
+    {
+        "_id": "B006",
+        "nombre": "Bodega Pequeña",
+        "tamanio": 300,
+        "nombre_sucursal": { "nombre": "Sucursal Pequeña", "direccion": "Calle 3" }
+    },
+    {
+        "_id": "B007",
+        "nombre": "Bodega Grande",
+        "tamanio": 1500,
+        "nombre_sucursal": { "nombre": "Sucursal Grande", "direccion": "Avenida 101" }
+    },
+    {
+        "_id": "B008",
+        "nombre": "Bodega Secundaria",
+        "tamanio": 900,
+        "nombre_sucursal": { "nombre": "Sucursal Secundaria", "direccion": "Carrera 8" }
+    },
+    {
+        "_id": "B009",
+        "nombre": "Bodega Industrial",
+        "tamanio": 2000,
+        "nombre_sucursal": { "nombre": "Sucursal Industrial", "direccion": "Zona Industrial" }
+    },
+    {
+        "_id": "B010",
+        "nombre": "Bodega Comercial",
+        "tamanio": 1200,
+        "nombre_sucursal": { "nombre": "Sucursal Comercial", "direccion": "Centro Comercial" }
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "_id": "789456123",
+        "nombre": "Manzanas",
+        "costo_en_bodega": 1.20,
+        "precio_unitario": 2.00,
+        "presentacion": "Bolsa",
+        "cantidad_presentacion": 10,
+        "unidad_de_medida": "kg",
+        "volumen": 0.05,
+        "peso": 10.0,
+        "categoria_codigo": {
+            "codigo": 1,
+            "nombre": "Frutas y Verduras",
+            "descripcion": "Productos frescos de origen vegetal",
+            "caracteristicas_almacenamiento": "Refrigeración entre 2°C y 8°C"
+        }
+    },
+    {
+        "_id": "123456789",
+        "nombre": "Carne de Res",
+        "costo_en_bodega": 5.00,
+        "precio_unitario": 8.00,
+        "presentacion": "Paquete",
+        "cantidad_presentacion": 5,
+        "unidad_de_medida": "kg",
+        "volumen": 0.02,
+        "peso": 5.0,
+        "categoria_codigo": {
+            "codigo": 2,
+            "nombre": "Carnes",
+            "descripcion": "Productos cárnicos crudos y procesados",
+            "caracteristicas_almacenamiento": "Congelación a -18°C"
+        }
+    },
+    {
+        "_id": "987654321",
+        "nombre": "Yogurt",
+        "costo_en_bodega": 0.50,
+        "precio_unitario": 1.00,
+        "presentacion": "Botella",
+        "cantidad_presentacion": 1,
+        "unidad_de_medida": "L",
+        "volumen": 0.01,
+        "peso": 1.0,
+        "categoria_codigo": {
+            "codigo": 3,
+            "nombre": "Lácteos",
+            "descripcion": "Productos derivados de la leche",
+            "caracteristicas_almacenamiento": "Refrigeración entre 1°C y 5°C"
+        }
+    },
+    {
+        "_id": "654789123",
+        "nombre": "Coca Cola",
+        "costo_en_bodega": 0.60,
+        "precio_unitario": 1.50,
+        "presentacion": "Lata",
+        "cantidad_presentacion": 12,
+        "unidad_de_medida": "ml",
+        "volumen": 0.33,
+        "peso": 4.0,
+        "categoria_codigo": {
+            "codigo": 4,
+            "nombre": "Bebidas",
+            "descripcion": "Jugos, aguas y refrescos",
+            "caracteristicas_almacenamiento": "Temperatura ambiente o refrigeración"
+        }
+    },
+    {
+        "_id": "321987654",
+        "nombre": "Pan Integral",
+        "costo_en_bodega": 0.80,
+        "precio_unitario": 1.50,
+        "presentacion": "Paquete",
+        "cantidad_presentacion": 1,
+        "unidad_de_medida": "pieza",
+        "volumen": 0.02,
+        "peso": 0.5,
+        "categoria_codigo": {
+            "codigo": 5,
+            "nombre": "Panadería",
+            "descripcion": "Productos horneados como pan y pasteles",
+            "caracteristicas_almacenamiento": "Almacenamiento en lugar fresco y seco"
+        }
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "_id": { "bodega_nombre": "Bodega Norte", "producto_codigodebarras": "789456123" },
+        "bodega_nombre": "Bodega Norte",
+        "producto_codigodebarras": "789456123",
+        "costo_promedio": 150,
+        "cantidad": 100,
+        "capacidad": 500,
+        "nivelminimoreorden": 50
+    },
+    {
+        "_id": { "bodega_nombre": "Bodega Sur", "producto_codigodebarras": "123456789" },
+        "bodega_nombre": "Bodega Sur",
+        "producto_codigodebarras": "123456789",
+        "costo_promedio": 200,
+        "cantidad": 80,
+        "capacidad": 300,
+        "nivelminimoreorden": 30
+    },
+    {
+        "_id": { "bodega_nombre": "Bodega Central", "producto_codigodebarras": "987654321" },
+        "bodega_nombre": "Bodega Central",
+        "producto_codigodebarras": "987654321",
+        "costo_promedio": 180,
+        "cantidad": 120,
+        "capacidad": 700,
+        "nivelminimoreorden": 70
+    },
+    {
+        "_id": { "bodega_nombre": "Bodega Este", "producto_codigodebarras": "654789123" },
+        "bodega_nombre": "Bodega Este",
+        "producto_codigodebarras": "654789123",
+        "costo_promedio": 220,
+        "cantidad": 50,
+        "capacidad": 200,
+        "nivelminimoreorden": 20
+    },
+    {
+        "_id": { "bodega_nombre": "Bodega Oeste", "producto_codigodebarras": "321987654" },
+        "bodega_nombre": "Bodega Oeste",
+        "producto_codigodebarras": "321987654",
+        "costo_promedio": 170,
+        "cantidad": 60,
+        "capacidad": 400,
+        "nivelminimoreorden": 40
+    }
+]

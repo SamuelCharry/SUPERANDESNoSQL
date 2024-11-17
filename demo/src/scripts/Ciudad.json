@@ -1,0 +1,42 @@
+[
+    {
+        "_id": 1,
+        "nombre": "Bogotá"
+    },
+    {
+        "_id": 2,
+        "nombre": "Medellín"
+    },
+    {
+        "_id": 3,
+        "nombre": "Cali"
+    },
+    {
+        "_id": 4,
+        "nombre": "Barranquilla"
+    },
+    {
+        "_id": 5,
+        "nombre": "Cartagena"
+    },
+    {
+        "_id": 6,
+        "nombre": "Bucaramanga"
+    },
+    {
+        "_id": 7,
+        "nombre": "Pereira"
+    },
+    {
+        "_id": 8,
+        "nombre": "Manizales"
+    },
+    {
+        "_id": 9,
+        "nombre": "Santa Marta"
+    },
+    {
+        "_id": 10,
+        "nombre": "Villavicencio"
+    }
+]
