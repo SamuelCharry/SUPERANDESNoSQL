@@ -1,5 +1,8 @@
 package uniandes.edu.co.demo.controller;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,11 +14,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import uniandes.edu.co.demo.modelo.Producto;
 import uniandes.edu.co.demo.repository.CategoriaRepository;
 import uniandes.edu.co.demo.repository.ProductoRepository;
+import uniandes.edu.co.demo.repository.ProductoRepositoryCustom;
 
 
 @RestController
@@ -27,6 +32,11 @@ public class ProductoController {
 
     @Autowired
     private CategoriaRepository categoriaRepository;
+
+    @Autowired
+    private ProductoRepositoryCustom productoRepositoryCustom;
+
+    
 
     // RF5 Crear Producto
     @PostMapping("/new")
@@ -104,6 +114,7 @@ public class ProductoController {
                 productoActualizado.setPeso(producto.getPeso());
                 productoActualizado.setCategoria_codigo(producto.getCategoria_codigo());
 
+
                 productoRepository.save(productoActualizado);
                 return new ResponseEntity<>("Producto actualizado exitosamente", HttpStatus.OK);
             } else {
@@ -113,4 +124,36 @@ public class ProductoController {
             return new ResponseEntity<>("Error al actualizar el producto: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+
+    // RFC1 Buscar productos por características
+    @GetMapping("/filtrar")
+    public ResponseEntity<List<org.bson.Document>> filtrarProductos(
+            @RequestParam double precioMin,
+            @RequestParam double precioMax,
+            @RequestParam String fechaLimite,
+            @RequestParam String categoria,
+            @RequestParam String sucursal
+    ) {
+        try {
+            Date fecha = new SimpleDateFormat("yyyy-MM-dd").parse(fechaLimite);
+
+            List<org.bson.Document> resultado = productoRepositoryCustom.obtenerProductosPorCondiciones(
+                    precioMin, precioMax, fecha, categoria, sucursal
+            );
+
+            return ResponseEntity.ok(resultado);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+
 }
+
+
+    
+
+
+
+

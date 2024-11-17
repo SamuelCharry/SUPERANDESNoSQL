@@ -5,5 +5,14 @@
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "38222574"
 	},
-	"item": []
+	"item": [
+		{
+			"name": "RFC1 Buscar productos por características",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
 }

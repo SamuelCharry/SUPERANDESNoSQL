@@ -83,5 +83,45 @@
             "descripcion": "Productos horneados como pan y pasteles",
             "caracteristicas_almacenamiento": "Almacenamiento en lugar fresco y seco"
         }
+    },
+    
+    {
+      "_id": "00123456789",
+      "nombre": "Manzanas Rojas",
+      "costo_en_bodega": 15.5,
+      "precio_unitario": 12,
+      "presentacion": "Bolsa",
+      "cantidad_presentacion": 5,
+      "unidad_de_medida": "kg",
+      "volumen": 0.1,
+      "peso": 10,
+      "fecha_vencimiento": "2024-11-30",
+      "categoria_codigo": {
+        "codigo": 1,
+        "nombre": "Frutas",
+        "descripcion": "Frutas frescas y saludables",
+        "caracteristicas_almacenamiento": "Refrigeración entre 2°C y 8°C"
+      },
+      "sucursalNombre": "Sucursal Centro"
+    },
+    {
+      "_id": "00123456790",
+      "nombre": "Peras Verdes",
+      "costo_en_bodega": 13.0,
+      "precio_unitario": 20,
+      "presentacion": "Caja",
+      "cantidad_presentacion": 10,
+      "unidad_de_medida": "kg",
+      "volumen": 0.2,
+      "peso": 15,
+      "fecha_vencimiento": "2024-12-20",
+      "categoria_codigo": {
+        "codigo": 1,
+        "nombre": "Frutas",
+        "descripcion": "Frutas frescas y saludables",
+        "caracteristicas_almacenamiento": "Refrigeración entre 2°C y 8°C"
+      },
+      "sucursalNombre": "Sucursal Centro"
     }
-]
+  ]
+  
