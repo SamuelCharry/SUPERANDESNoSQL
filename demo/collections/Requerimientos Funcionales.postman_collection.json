@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "f8ada631-45f4-4209-9d74-a18e5e97f8f2",
+		"_postman_id": "968c2838-0f14-40e1-b6bb-e11733da5e7f",
 		"name": "Requerimientos Funcionales",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "38222574"
+		"_exporter_id": "37642088"
 	},
 	"item": [
 		{
@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nombre\": \"Sucursal augusto\",\r\n    \"tamanio\": 1000,\r\n    \"direccion\": \"Calle 123123214\",\r\n    \"telefono\": 987654,\r\n    \"codigo_ciudad\": {\r\n        \"codigo\": 1,\r\n        \"nombre\": \"Bogotá\"\r\n    }\r\n}\r\n",
+					"raw": "{\r\n    \"nombre\": \"Sucursal Norte\",\r\n    \"tamanio\": 1000,\r\n    \"direccion\": \"Avenida Principal 123\",\r\n    \"telefono\": 123456789,\r\n    \"ciudad\": \"Bogotá\",\r\n    \"bodegas\": [\r\n      {\r\n        \"nombre\": \"Bodega 1\",\r\n        \"tamanio\": 500,\r\n        \"inventarios\": [\"0011223344\"]\r\n      }\r\n    ]\r\n  }\r\n  ",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -43,7 +43,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nombre\": \"Bodega AUGUSTO\",\r\n    \"tamanio\": 500,\r\n    \"nombre_sucursal\": {\r\n        \"_id\": \"Sucursal Norte\",\r\n        \"tamanio\": 1000,\r\n        \"direccion\": \"Calle 123\",\r\n        \"telefono\": 123456789,\r\n        \"codigo_ciudad\": {\r\n            \"codigo\": 1,\r\n            \"nombre\": \"Bogotá\"\r\n        }\r\n    }\r\n}\r\n",
+					"raw": "{\r\n    \"nombre\": \"Bodega 1\",\r\n    \"tamaño\": 500,\r\n    \"inventarios\": [\"0011223344\"]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -51,7 +51,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/bodegas/new/save",
+					"raw": "http://localhost:8080/bodegas/new/save/id_sucursal",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -60,7 +60,8 @@
 					"path": [
 						"bodegas",
 						"new",
-						"save"
+						"save",
+						"id_sucursal"
 					]
 				}
 			},
@@ -93,7 +94,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "// {CASO DE PRUEBA QUE FUNCIONA\r\n//     \"nit\": 123456,\r\n//     \"nombre\": \"Proveedor Principal\",\r\n//     \"direccion\": \"Calle 123\",\r\n//     \"nombre_contacto\": \"Juan Pérez\",\r\n//     \"telefono_contacto\": 987654321\r\n// }\r\n\r\n//CASO DE PRUEBA QUE NO FUNCIONA PARA LA ENTREGA \r\n{\r\n    \"nit\": \"ABC123\",\r\n    \"nombre\": null,\r\n    \"direccion\": \"Calle falsa 123\",\r\n    \"nombre_contacto\": 456,\r\n    \"telefono_contacto\": \"No es un número\"\r\n}\r\n\r\n\r\n",
+					"raw": "{\r\n    \"nit\": 12345,\r\n    \"nombre\": \"Proveedor ABC\",\r\n    \"direccion\": \"Calle 123\",\r\n    \"nombreContacto\": \"Juan Perez\",\r\n    \"telefonoContacto\": 987654321\r\n}\r\n\r\n// //CASO DE PRUEBA QUE NO FUNCIONA PARA LA ENTREGA \r\n// {\r\n//     \"nit\": \"ABC123\",\r\n//     \"nombre\": null,\r\n//     \"direccion\": \"Calle falsa 123\",\r\n//     \"nombre_contacto\": 456,\r\n//     \"telefono_contacto\": \"No es un número\"\r\n// }\r\n\r\n\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -122,7 +123,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nombre\": \"Proveedor Actualizado\",\r\n    \"direccion\": \"Avenida 456\",\r\n    \"nombre_contacto\": \"Ana Gómez\",\r\n    \"telefono_contacto\": 123456789\r\n}\r\n",
+					"raw": "{\r\n    \"nombre\": \"Proveedor X\",\r\n    \"direccion\": \"Calle 321\",\r\n    \"nombre_contacto\": \"Samuel Charry\",\r\n    \"telefono_contacto\": 987654321\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -152,7 +153,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"codigo\": 201,\r\n    \"nombre\": \"Frutas\",\r\n    \"descripcion\": \"Productos frescos y saludables\",\r\n    \"caracteristicas_almacenamiento\": \"Temperatura ambiente\"\r\n}\r\n",
+					"raw": "{\r\n    \"codigo\": 2,\r\n    \"nombre\": \"Bebidas\",\r\n    \"descripcion\": \"Bebidas no alcohólicas\",\r\n    \"caracteristicas_almacenamiento\": \"Sin gas, naturales\"\r\n  }\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
