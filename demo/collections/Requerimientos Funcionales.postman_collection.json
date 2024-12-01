@@ -43,7 +43,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nombre\": \"Bodega 1\",\r\n    \"tamaño\": 500,\r\n    \"inventarios\": [\"0011223344\"]\r\n}",
+					"raw": "{\r\n    \"nombre\": \"Bodega 1\",\r\n    \"tamanio\": 500,\r\n    \"inventarios\": [\"0011223344\"]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -51,17 +51,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/bodegas/new/save/id_sucursal",
+					"raw": "http://localhost:8080/sucursales/Sucursal%20Norte/bodegas",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"bodegas",
-						"new",
-						"save",
-						"id_sucursal"
+						"sucursales",
+						"Sucursal%20Norte",
+						"bodegas"
 					]
 				}
 			},
@@ -73,15 +72,18 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/bodegas/Bodega%20AUGUSTO",
+					"raw": "http://localhost:8080/api/sucursales/Sucursal4/bodegas/Bodega%201",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
+						"sucursales",
+						"Sucursal4",
 						"bodegas",
-						"Bodega%20AUGUSTO"
+						"Bodega%201"
 					]
 				}
 			},
@@ -94,7 +96,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nit\": 12345,\r\n    \"nombre\": \"Proveedor ABC\",\r\n    \"direccion\": \"Calle 123\",\r\n    \"nombreContacto\": \"Juan Perez\",\r\n    \"telefonoContacto\": 987654321\r\n}\r\n\r\n// //CASO DE PRUEBA QUE NO FUNCIONA PARA LA ENTREGA \r\n// {\r\n//     \"nit\": \"ABC123\",\r\n//     \"nombre\": null,\r\n//     \"direccion\": \"Calle falsa 123\",\r\n//     \"nombre_contacto\": 456,\r\n//     \"telefono_contacto\": \"No es un número\"\r\n// }\r\n\r\n\r\n",
+					"raw": "{\r\n    \"nit\": 1234567,\r\n    \"nombre\": \"Proveedor ABC\",\r\n    \"direccion\": \"Calle 123\",\r\n    \"nombre_contacto\": \"Juan Perez\",\r\n    \"telefono_contacto\": 987654321\r\n}\r\n\r\n// //CASO DE PRUEBA QUE NO FUNCIONA PARA LA ENTREGA \r\n// {\r\n//     \"nit\": \"ABC123\",\r\n//     \"nombre\": null,\r\n//     \"direccion\": \"Calle falsa 123\",\r\n//     \"nombre_contacto\": 456,\r\n//     \"telefono_contacto\": \"No es un número\"\r\n// }\r\n\r\n\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -153,7 +155,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"codigo\": 2,\r\n    \"nombre\": \"Bebidas\",\r\n    \"descripcion\": \"Bebidas no alcohólicas\",\r\n    \"caracteristicas_almacenamiento\": \"Sin gas, naturales\"\r\n  }\r\n",
+					"raw": "{\r\n    \"codigo\": 1,\r\n    \"nombre\": \"Bebidas\",\r\n    \"descripcion\": \"Bebidas no alcohólicas\",\r\n    \"caracteristicas_almacenamiento\": \"Sin gas, naturales\"\r\n  }\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -182,7 +184,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/categorias/nombre/Frutas",
+					"raw": "http://localhost:8080/categorias/nombre/Bebidas",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -191,7 +193,7 @@
 					"path": [
 						"categorias",
 						"nombre",
-						"Frutas"
+						"Bebidas"
 					]
 				}
 			},
@@ -203,7 +205,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/categorias/codigo/201",
+					"raw": "http://localhost:8080/categorias/codigo/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -212,7 +214,7 @@
 					"path": [
 						"categorias",
 						"codigo",
-						"201"
+						"1"
 					]
 				}
 			},
@@ -225,7 +227,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"codigo_de_barras\": \"skillissue123\",\r\n    \"nombre\": \"Penpinapleapplepen\",\r\n    \"costo_en_bodega\": 1.2,\r\n    \"precio_unitario\": 2,\r\n    \"presentacion\": \"Bolsa\",\r\n    \"cantidad_presentacion\": 10,\r\n    \"unidad_de_medida\": \"kg\",\r\n    \"volumen\": 0.05,\r\n    \"peso\": 10,\r\n    \"categoria_codigo\": {\r\n        \"codigo\": 1,\r\n        \"nombre\": \"Frutas\",\r\n        \"descripcion\": \"Productos frescos y saludables\",\r\n        \"caracteristicas_almacenamiento\": \"Refrigeración entre 2°C y 8°C\"\r\n    }\r\n}\r\n\r\n",
+					"raw": "{\r\n    \"codigo_de_barras\": \"001\",\r\n    \"nombre\": \"Agua\",\r\n    \"costo_en_bodega\": 500,\r\n    \"precio_unitario\": 1000,\r\n    \"cantidad_presentacion\": 12,\r\n    \"presentacion\": \"Botella\",\r\n    \"unidad_de_medida\": \"ml\",\r\n    \"volumen\": 500,\r\n    \"peso\": 0.5,\r\n    \"categoria_codigo\": 2,\r\n    \"proveedores\": [12345]\r\n  }\r\n  ",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -253,7 +255,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/productos/codigo/skillissue123",
+					"raw": "http://localhost:8080/productos/codigo/001",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -262,7 +264,7 @@
 					"path": [
 						"productos",
 						"codigo",
-						"skillissue123"
+						"001"
 					]
 				}
 			},
@@ -274,7 +276,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/productos/nombre/Manzanas",
+					"raw": "http://localhost:8080/productos/nombre/Agua",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -283,7 +285,57 @@
 					"path": [
 						"productos",
 						"nombre",
-						"Manzanas"
+						"Agua"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF6 CREAR ORDEN DE COMPRA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 104,\r\n    \"fechaCreacion\": \"2024-11-30\",\r\n    \"fechaEntrega\": \"2024-12-05\",\r\n    \"estado\": \"ENTREGADA\",\r\n    \"proveedor_nit\": 12345,\r\n    \"sucursal_nombre\": \"Sucursal Norte\",\r\n    \"items\": [\r\n      {\r\n        \"producto\":\"0011223344\",\r\n        \"cantidad\": 50,\r\n        \"precio\": 1000\r\n      }\r\n    ]\r\n  }\r\n  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ordenDeCompra/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ordenDeCompra",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF7 Leer Orden de Compra",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ordenDeCompra/codigo/102",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ordenDeCompra",
+						"codigo",
+						"102"
 					]
 				}
 			},
