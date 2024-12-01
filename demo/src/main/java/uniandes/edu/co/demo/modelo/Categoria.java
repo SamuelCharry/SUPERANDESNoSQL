@@ -24,9 +24,6 @@ public class Categoria {
         this.caracteristicas_almacenamiento = caracteristicas_almacenamiento;
     }
 
-    //Constructor vacio
-    public Categoria() {;}
-
     //GETTERS
     public Integer getCodigo() {
         return codigo;

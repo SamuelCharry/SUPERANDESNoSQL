@@ -1,16 +1,15 @@
 {
-    "_id": 101,
-    "fechaCreacion": "2024-11-30",
-    "fechaEntrega": "2024-12-05",
-    "estado": "ENTREGADA",
-    "proveedor": 12345,
-    "sucursal": "Sucursal Norte",
-    "items": [
-      {
-        "producto":"0011223344",
-        "cantidad": 50,
-        "precio": 1000
-      }
-    ]
-  }
-  
+  "codigo": 102,
+  "fechaCreacion": "2024-11-30",
+  "fechaEntrega": "2024-12-05",
+  "estado": "ENTREGADA",
+  "proveedor_nit": 12345,
+  "sucursal_nombre": "Sucursal Norte",
+  "items": [
+    {
+      "producto":"0011223344",
+      "cantidad": 50,
+      "precio": 1000
+    }
+  ]
+}
