@@ -1,37 +1,7 @@
-[
-    {
-        "_id": 1001,
-        "nombre": "Proveedor A",
-        "direccion": "Calle 123",
-        "nombre_contacto": "Juan Pérez",
-        "telefono_contacto": 123456789
-    },
-    {
-        "_id": 1002,
-        "nombre": "Proveedor B",
-        "direccion": "Avenida 45",
-        "nombre_contacto": "María López",
-        "telefono_contacto": 987654321
-    },
-    {
-        "_id": 1003,
-        "nombre": "Proveedor C",
-        "direccion": "Carrera 67",
-        "nombre_contacto": "Carlos Martínez",
-        "telefono_contacto": 456789123
-    },
-    {
-        "_id": 1004,
-        "nombre": "Proveedor D",
-        "direccion": "Diagonal 89",
-        "nombre_contacto": "Ana Torres",
-        "telefono_contacto": 321654987
-    },
-    {
-        "_id": 1005,
-        "nombre": "Proveedor E",
-        "direccion": "Transversal 10",
-        "nombre_contacto": "Luis Gómez",
-        "telefono_contacto": 654123987
-    }
-]
+{
+    "_id": 12345,
+    "nombre": "Proveedor ABC",
+    "direccion": "Calle 123",
+    "nombreContacto": "Juan Perez",
+    "telefonoContacto": 987654321
+}

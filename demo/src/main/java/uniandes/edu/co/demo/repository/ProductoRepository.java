@@ -36,7 +36,4 @@ public interface ProductoRepository extends MongoRepository<Producto, String> {
             //String sucursalNombre
     );
     
-
-
-    
 }

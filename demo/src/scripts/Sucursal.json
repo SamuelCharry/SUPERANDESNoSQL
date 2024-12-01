@@ -1,52 +1,15 @@
-[
-    {
-        "_id": "Sucursal Norte",
-        "tamanio": 1000,
-        "direccion": "Calle 123",
-        "telefono": 123456789,
-        "codigo_ciudad": {
-            "codigo": 1,
-            "nombre": "Bogotá"
-        }
-    },
-    {
-        "_id": "Sucursal Sur",
-        "tamanio": 800,
-        "direccion": "Avenida 45",
-        "telefono": 987654321,
-        "codigo_ciudad": {
-            "codigo": 2,
-            "nombre": "Medellín"
-        }
-    },
-    {
-        "_id": "Sucursal Central",
-        "tamanio": 1200,
-        "direccion": "Carrera 67",
-        "telefono": 456789123,
-        "codigo_ciudad": {
-            "codigo": 3,
-            "nombre": "Cali"
-        }
-    },
-    {
-        "_id": "Sucursal Este",
-        "tamanio": 900,
-        "direccion": "Diagonal 89",
-        "telefono": 321654987,
-        "codigo_ciudad": {
-            "codigo": 4,
-            "nombre": "Barranquilla"
-        }
-    },
-    {
-        "_id": "Sucursal Oeste",
-        "tamanio": 700,
-        "direccion": "Transversal 10",
-        "telefono": 654123987,
-        "codigo_ciudad": {
-            "codigo": 5,
-            "nombre": "Cartagena"
-        }
-    }
-]
+{
+    "_id": "Sucursal Norte",
+    "tamaño": 1000,
+    "direccion": "Avenida Principal 123",
+    "telefono": 123456789,
+    "ciudad": "Bogotá",
+    "bodegas": [
+      {
+        "nombre": "Bodega 1",
+        "tamaño": 500,
+        "inventarios": ["0011223344"]
+      }
+    ]
+  }
+  
