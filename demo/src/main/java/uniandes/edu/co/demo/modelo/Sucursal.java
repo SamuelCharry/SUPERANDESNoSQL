@@ -17,20 +17,15 @@ public class Sucursal {
     private Integer telefono;
     private String ciudad;
     private Bodega[] bodegas;
-
-    //Constructor
-    public Sucursal(String nombre, Integer tamanio, String direccion, Integer telefono, String ciudad) {
+    
+    public Sucursal(Bodega[] bodegas, String ciudad, String direccion, String nombre, Integer tamanio, Integer telefono) {
+        this.bodegas = bodegas;
+        this.ciudad = ciudad;
+        this.direccion = direccion;
         this.nombre = nombre;
         this.tamanio = tamanio;
-        this.direccion = direccion;
         this.telefono = telefono;
-        this.ciudad = ciudad;
-       
     }
-    
-    
-    //Constructor vacio
-    public Sucursal() {;}
 
     public String getNombre() {
         return nombre;

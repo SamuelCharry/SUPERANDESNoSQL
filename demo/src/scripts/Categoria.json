@@ -1,6 +1,6 @@
 {
-    "_id": 1,
-    "nombre": "Bebidas",
-    "descripcion": "Bebidas no alcohólicas",
-    "caracteristicas": "Sin gas, naturales"
-  }
+  "codigo": 2,
+  "nombre": "Bebidas",
+  "descripcion": "Bebidas no alcohólicas",
+  "caracteristicas_almacenamiento": "Sin gas, naturales"
+}

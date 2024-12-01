@@ -1,14 +1,13 @@
 {
-    "_id": "0011223344",
-    "nombre": "Agua Mineral",
-    "costo_en_bodega": 500,
-    "precio_unitario": 1000,
-    "cantidad_presentacion": 12,
-    "presentacion": "Botella",
-    "unidad_de_medida": "ml",
-    "volumen": 500,
-    "peso": 0.5,
-    "categoria": 1,
-    "proveedores": [12345]
-  }
-  
+  "codigo_de_barras": "0011223347",
+  "nombre": "Agua Mineral",
+  "costo_en_bodega": 500,
+  "precio_unitario": 1000,
+  "cantidad_presentacion": 12,
+  "presentacion": "Botella",
+  "unidad_de_medida": "ml",
+  "volumen": 500,
+  "peso": 0.5,
+  "categoria_codigo": 2,
+  "proveedores": [12345]
+}

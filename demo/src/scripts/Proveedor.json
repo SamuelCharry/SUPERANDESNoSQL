@@ -1,7 +1,7 @@
 {
-    "_id": 12345,
+    "nit": 123456,
     "nombre": "Proveedor ABC",
     "direccion": "Calle 123",
-    "nombreContacto": "Juan Perez",
-    "telefonoContacto": 987654321
+    "nombre_contacto": "Juan Perez",
+    "telefono_contacto": 987654321
 }

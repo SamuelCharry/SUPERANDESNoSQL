@@ -25,9 +25,6 @@ public class Proveedor {
         this.telefono_contacto = telefono_contacto;
     }
 
-    //Constructor vacio
-    public Proveedor() {;}
-
     //GETTERS
     public Integer getNit() {
         return nit;

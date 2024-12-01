@@ -1,4 +1,6 @@
 package uniandes.edu.co.demo.modelo;
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -23,19 +25,20 @@ public class Producto {
     private Double volumen;
     private Double peso;
     private Integer categoria_codigo;
+    private List<Integer> proveedores;
 
-    //Constructor
-    public Producto(String codigo_de_barras, String nombre, Double costo_en_bodega, Double precio_unitario, Integer cantidad_presentacion, String presentacion, String unidad_de_medida, Double volumen, Double peso, Integer categoria_codigo) {
-        this.codigo_de_barras = codigo_de_barras;
-        this.nombre = nombre;
-        this.costo_en_bodega = costo_en_bodega;
-        this.precio_unitario = precio_unitario;
+    public Producto(Integer cantidad_presentacion, Integer categoria_codigo, String codigo_de_barras, Double costo_en_bodega, String nombre, Double peso, Double precio_unitario, String presentacion, List<Integer> proveedores, String unidad_de_medida, Double volumen) {
         this.cantidad_presentacion = cantidad_presentacion;
+        this.categoria_codigo = categoria_codigo;
+        this.codigo_de_barras = codigo_de_barras;
+        this.costo_en_bodega = costo_en_bodega;
+        this.nombre = nombre;
+        this.peso = peso;
+        this.precio_unitario = precio_unitario;
         this.presentacion = presentacion;
+        this.proveedores = proveedores;
         this.unidad_de_medida = unidad_de_medida;
         this.volumen = volumen;
-        this.peso = peso;
-        this.categoria_codigo = categoria_codigo;
     }
 
     public String getCodigo_de_barras() {
@@ -78,6 +81,10 @@ public class Producto {
         return categoria_codigo;
     }
 
+    public List<Integer> getProveedores() {
+        return proveedores;
+    }
+
     public void setCodigo_de_barras(String codigo_de_barras) {
         this.codigo_de_barras = codigo_de_barras;
     }
@@ -117,4 +124,10 @@ public class Producto {
     public void setCategoria_codigo(Integer categoria_codigo) {
         this.categoria_codigo = categoria_codigo;
     }
+
+    public void setProveedores(List<Integer> proveedores) {
+        this.proveedores = proveedores;
+    }
+
+
 }

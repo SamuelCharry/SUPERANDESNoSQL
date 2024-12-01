@@ -1,15 +1,14 @@
 {
-    "_id": "Sucursal Norte",
-    "tamaño": 1000,
-    "direccion": "Avenida Principal 123",
-    "telefono": 123456789,
-    "ciudad": "Bogotá",
-    "bodegas": [
-      {
-        "nombre": "Bodega 1",
-        "tamaño": 500,
-        "inventarios": ["0011223344"]
-      }
-    ]
-  }
-  
+  "nombre": "Sucursal Norte",
+  "tamanio": 1000,
+  "direccion": "Avenida Principal 123",
+  "telefono": 123456789,
+  "ciudad": "Bogotá",
+  "bodegas": [
+    {
+      "nombre": "Bodega 1",
+      "tamanio": 500,
+      "inventarios": ["0011223344"]
+    }
+  ]
+}

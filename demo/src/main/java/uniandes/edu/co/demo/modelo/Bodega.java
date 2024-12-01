@@ -17,7 +17,7 @@ public class Bodega {
     private Integer tamanio;
     private List<Integer> Inventarios;
 
-    public Bodega(List<Integer> Inventarios, String nombre, Integer tamanio) {
+    public Bodega(String nombre, Integer tamanio, List<Integer> Inventarios) {
         this.Inventarios = Inventarios;
         this.nombre = nombre;
         this.tamanio = tamanio;
