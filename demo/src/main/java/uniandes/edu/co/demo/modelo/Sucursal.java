@@ -15,61 +15,67 @@ public class Sucursal {
     private Integer tamanio;
     private String direccion;
     private Integer telefono;
-
-    
-    private Ciudad codigo_ciudad;
+    private String ciudad;
+    private Bodega[] bodegas;
 
     //Constructor
-    public Sucursal(String nombre, Integer tamanio, String direccion, Integer telefono, Ciudad codigo_ciudad) {
+    public Sucursal(String nombre, Integer tamanio, String direccion, Integer telefono, String ciudad) {
         this.nombre = nombre;
         this.tamanio = tamanio;
         this.direccion = direccion;
         this.telefono = telefono;
-        this.codigo_ciudad = codigo_ciudad;
+        this.ciudad = ciudad;
+       
     }
+    
     
     //Constructor vacio
     public Sucursal() {;}
 
-    //GETTERS
     public String getNombre() {
         return nombre;
+    }   
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public Integer getTamanio() {
         return tamanio;
     }
 
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public Integer  getTelefono() {
-        return telefono;
-    }
-
-    public Ciudad getCiudad() {
-        return codigo_ciudad;
-    }
-
-    //SETTERS
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public void setTamanio(Integer tamanio) {
         this.tamanio = tamanio;
+    }
+
+    public String getDireccion() {
+        return direccion;
     }
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
 
-    public void setTelefono(Integer  telefono) {
+    public Integer getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(Integer telefono) {
         this.telefono = telefono;
     }
 
-    public void setCiudad(Ciudad codigo_ciudad) {
-        this.codigo_ciudad = codigo_ciudad;
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public Bodega[] getBodegas() {
+        return bodegas;
+    }
+
+    public void setBodegas(Bodega[] bodegas) {
+        this.bodegas = bodegas;
     }
 }

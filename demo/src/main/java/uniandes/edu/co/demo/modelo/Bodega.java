@@ -1,5 +1,7 @@
 package uniandes.edu.co.demo.modelo;
 
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -13,43 +15,37 @@ public class Bodega {
     @Id
     private String nombre;
     private Integer tamanio;
-    
-   
-    private Sucursal nombre_sucursal;
+    private List<Integer> Inventarios;
 
-    // Constructor
-    public Bodega(String nombre, Integer tamanio, Sucursal nombre_sucursal) {
+    public Bodega(List<Integer> Inventarios, String nombre, Integer tamanio) {
+        this.Inventarios = Inventarios;
         this.nombre = nombre;
         this.tamanio = tamanio;
-        this.nombre_sucursal = nombre_sucursal;
     }
 
-    // Constructor vacio
-    public Bodega() {;}
-
-    //GETTERS
     public String getNombre() {
         return nombre;
     }
 
-    public Integer  getTamanio() {
-        return tamanio;
-    }
-
-    public Sucursal getNombre_sucursal() {
-        return nombre_sucursal;
-    }
-
-    //SETTERS
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public void setTamanio(Integer  tamanio) {
+    public Integer getTamanio() {
+        return tamanio;
+    }
+
+    public void setTamanio(Integer tamanio) {
         this.tamanio = tamanio;
     }
 
-    public void setNombre_sucursal(Sucursal nombre_sucursal) {
-        this.nombre_sucursal = nombre_sucursal;
+    public List<Integer> getInventarios() {
+        return Inventarios;
     }
+
+    public void setInventarios(List<Integer> Inventarios) {
+        this.Inventarios = Inventarios;
+    }
+
+  
 }

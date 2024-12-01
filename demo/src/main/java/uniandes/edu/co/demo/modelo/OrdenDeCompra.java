@@ -1,6 +1,7 @@
 package uniandes.edu.co.demo.modelo;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -17,26 +18,20 @@ public class OrdenDeCompra {
     private Date fechaCreacion;
     private Date fechaEntrega;
     private String estado;
+    private Integer proveedor_nit;
+    private String sucursal_nombre;
+    private List<Item> items;
 
-   
-    private Proveedor proveedor_nit;
-
-    
-    private Sucursal sucursal_nombre;
-
-    //Constructor
-    public OrdenDeCompra(Date fechaCreacion, Date fechaEntrega, String estado, Proveedor proveedor_nit, Sucursal sucursal_nombre) {
+    public OrdenDeCompra(Integer codigo, String estado, Date fechaCreacion, Date fechaEntrega, List<Item> items, Integer proveedor_nit, String sucursal_nombre) {
+        this.codigo = codigo;
+        this.estado = estado;
         this.fechaCreacion = fechaCreacion;
         this.fechaEntrega = fechaEntrega;
-        this.estado = estado;
+        this.items = items;
         this.proveedor_nit = proveedor_nit;
         this.sucursal_nombre = sucursal_nombre;
     }
 
-    //Constructor vacio
-    public OrdenDeCompra() {;}
-
-    //GETTERS
     public Integer getCodigo() {
         return codigo;
     }
@@ -53,15 +48,18 @@ public class OrdenDeCompra {
         return estado;
     }
 
-    public Proveedor getProveedor_nit() {
+    public Integer getProveedor_nit() {
         return proveedor_nit;
     }
 
-    public Sucursal getSucursal_nombre() {
+    public String getSucursal_nombre() {
         return sucursal_nombre;
     }
 
-    //SETTERS
+    public List<Item> getItems() {
+        return items;
+    }
+
     public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
@@ -78,11 +76,16 @@ public class OrdenDeCompra {
         this.estado = estado;
     }
 
-    public void setProveedor_nit(Proveedor proveedor_nit) {
+    public void setProveedor_nit(Integer proveedor_nit) {
         this.proveedor_nit = proveedor_nit;
     }
 
-    public void setSucursal_nombre(Sucursal sucursal_nombre) {
+    public void setSucursal_nombre(String sucursal_nombre) {
         this.sucursal_nombre = sucursal_nombre;
     }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
+
 }

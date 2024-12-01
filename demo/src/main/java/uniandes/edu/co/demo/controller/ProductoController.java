@@ -44,18 +44,18 @@ public class ProductoController {
         try {
 
             //tengo terror skill issue necesito esto
-            System.out.println("Código de Barras recibido: " + producto.getCodigoDeBarras());
+            System.out.println("Código de Barras recibido: " + producto.getCodigo_de_barras());
 
 
 
-            if (producto.getCodigoDeBarras() == null || producto.getCodigoDeBarras().isEmpty()) {
+            if (producto.getCodigo_de_barras() == null || producto.getCodigo_de_barras().isEmpty()) {
                 return new ResponseEntity<>("Error: El código de barras no puede ser nulo o vacío", HttpStatus.BAD_REQUEST);
             }
-            if (productoRepository.existsById(producto.getCodigoDeBarras())) {
+            if (productoRepository.existsById(producto.getCodigo_de_barras())) {
                 return new ResponseEntity<>("Error: El producto ya existe", HttpStatus.CONFLICT);
             }
             if (producto.getCategoria_codigo() == null || 
-                !categoriaRepository.existsById(producto.getCategoria_codigo().getCodigo())) {
+                !categoriaRepository.existsById(producto.getCategoria_codigo())) {
                 return new ResponseEntity<>("Error: La categoría asociada no existe", HttpStatus.BAD_REQUEST);
             }
             productoRepository.save(producto);
@@ -105,11 +105,11 @@ public class ProductoController {
                 Producto productoActualizado = productoExistente.get();
 
                 productoActualizado.setNombre(producto.getNombre());
-                productoActualizado.setCostoEnBodega(producto.getCostoEnBodega());
-                productoActualizado.setPrecioUnitario(producto.getPrecioUnitario());
+                productoActualizado.setCosto_en_bodega(producto.getCosto_en_bodega());
+                productoActualizado.setPrecio_unitario(producto.getPrecio_unitario());
                 productoActualizado.setPresentacion(producto.getPresentacion());
-                productoActualizado.setCantidadPresentacion(producto.getCantidadPresentacion());
-                productoActualizado.setUnidadDeMedida(producto.getUnidadDeMedida());
+                productoActualizado.setCantidad_presentacion(producto.getCantidad_presentacion());
+                productoActualizado.setUnidad_de_medida(producto.getUnidad_de_medida());
                 productoActualizado.setVolumen(producto.getVolumen());
                 productoActualizado.setPeso(producto.getPeso());
                 productoActualizado.setCategoria_codigo(producto.getCategoria_codigo());

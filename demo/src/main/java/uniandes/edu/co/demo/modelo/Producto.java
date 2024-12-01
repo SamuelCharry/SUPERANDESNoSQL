@@ -17,34 +17,28 @@ public class Producto {
     private String nombre;
     private Double costo_en_bodega;
     private Double precio_unitario;
-    private String presentacion;
     private Integer cantidad_presentacion;
+    private String presentacion;
     private String unidad_de_medida;
     private Double volumen;
     private Double peso;
-
-   
-    private Categoria categoria_codigo;
+    private Integer categoria_codigo;
 
     //Constructor
-    public Producto(String codigo_de_barras, String nombre, Double costo_en_bodega, Double precio_unitario, String presentacion, Integer cantidad_presentacion, String unidad_de_medida, Double peso, Double volumen, Categoria categoria_codigo) {
+    public Producto(String codigo_de_barras, String nombre, Double costo_en_bodega, Double precio_unitario, Integer cantidad_presentacion, String presentacion, String unidad_de_medida, Double volumen, Double peso, Integer categoria_codigo) {
         this.codigo_de_barras = codigo_de_barras;
         this.nombre = nombre;
         this.costo_en_bodega = costo_en_bodega;
         this.precio_unitario = precio_unitario;
-        this.presentacion = presentacion;
         this.cantidad_presentacion = cantidad_presentacion;
+        this.presentacion = presentacion;
         this.unidad_de_medida = unidad_de_medida;
         this.volumen = volumen;
         this.peso = peso;
         this.categoria_codigo = categoria_codigo;
     }
 
-    //Constructor vacio
-    public Producto() {;}
-
-    //GETTERS
-    public String getCodigoDeBarras() {
+    public String getCodigo_de_barras() {
         return codigo_de_barras;
     }
 
@@ -52,23 +46,23 @@ public class Producto {
         return nombre;
     }
 
-    public Double getCostoEnBodega() {
+    public Double getCosto_en_bodega() {
         return costo_en_bodega;
     }
 
-    public Double getPrecioUnitario() {
+    public Double getPrecio_unitario() {
         return precio_unitario;
+    }
+
+    public Integer getCantidad_presentacion() {
+        return cantidad_presentacion;
     }
 
     public String getPresentacion() {
         return presentacion;
     }
 
-    public Integer getCantidadPresentacion() {
-        return cantidad_presentacion;
-    }
-
-    public String getUnidadDeMedida() {
+    public String getUnidad_de_medida() {
         return unidad_de_medida;
     }
 
@@ -80,12 +74,11 @@ public class Producto {
         return peso;
     }
 
-    public Categoria getCategoria_codigo() {
+    public Integer getCategoria_codigo() {
         return categoria_codigo;
     }
 
-    //SETTERS
-    public void setCodigoDeBarras(String codigo_de_barras) {
+    public void setCodigo_de_barras(String codigo_de_barras) {
         this.codigo_de_barras = codigo_de_barras;
     }
 
@@ -93,23 +86,23 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public void setCostoEnBodega(Double costo_en_bodega) {
+    public void setCosto_en_bodega(Double costo_en_bodega) {
         this.costo_en_bodega = costo_en_bodega;
     }
 
-    public void setPrecioUnitario(Double precio_unitario) {
+    public void setPrecio_unitario(Double precio_unitario) {
         this.precio_unitario = precio_unitario;
+    }
+
+    public void setCantidad_presentacion(Integer cantidad_presentacion) {
+        this.cantidad_presentacion = cantidad_presentacion;
     }
 
     public void setPresentacion(String presentacion) {
         this.presentacion = presentacion;
     }
 
-    public void setCantidadPresentacion(Integer cantidad_presentacion) {
-        this.cantidad_presentacion = cantidad_presentacion;
-    }
-
-    public void setUnidadDeMedida(String unidad_de_medida) {
+    public void setUnidad_de_medida(String unidad_de_medida) {
         this.unidad_de_medida = unidad_de_medida;
     }
 
@@ -120,9 +113,8 @@ public class Producto {
     public void setPeso(Double peso) {
         this.peso = peso;
     }
- 
 
-    public void setCategoria_codigo(Categoria categoria_codigo) {
+    public void setCategoria_codigo(Integer categoria_codigo) {
         this.categoria_codigo = categoria_codigo;
     }
 }

@@ -13,11 +13,7 @@ public class Proveedor {
     private Integer nit;
     private String nombre;
     private String direccion;
-
-   
     private String nombre_contacto;
-
-    
     private Integer telefono_contacto;
 
     //Constructor

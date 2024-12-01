@@ -8,29 +8,22 @@ public class Item {
 
     // Atributos
     @Id
-    private ItemPK pk;
+    private String producto;
     private Integer cantidad;
     private Integer precio;
 
-    // Constructor
-    public Item(OrdenDeCompra ordendecompra_codigo, Producto producto_codigodebarras, Integer cantidad, Integer precio) {
-        this.pk = new ItemPK(ordendecompra_codigo, producto_codigodebarras);
+    public Item(Integer cantidad, Integer precio, String producto) {
         this.cantidad = cantidad;
         this.precio = precio;
+        this.producto = producto;
     }
 
-    // Constructor vacio
-    public Item() {
-        ;
+    public String getProducto() {
+        return producto;
     }
 
-    // Getters and Setters
-    public ItemPK getPk() {
-        return pk;
-    }
-
-    public void setPk(ItemPK pk) {
-        this.pk = pk;
+    public void setProducto(String producto) {
+        this.producto = producto;
     }
 
     public Integer getCantidad() {
@@ -48,4 +41,6 @@ public class Item {
     public void setPrecio(Integer precio) {
         this.precio = precio;
     }
+
+   
 }

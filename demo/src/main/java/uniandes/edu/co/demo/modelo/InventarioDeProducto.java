@@ -11,33 +11,29 @@ public class InventarioDeProducto {
 
     // Atributos
     @Id
-    private InventarioDeProductoPK pk;
+    private Integer codigo;
     private Integer costo_promedio;
     private Integer cantidad;
     private Integer capacidad;
     private Integer nivelminimoreorden;
+    private Integer[] codigo_barra_productos;
 
     // Constructor
-    public InventarioDeProducto(Bodega nombre_bodega, Producto codigoDeBarras_producto, Integer costoPromedio,
-            Integer cantidad, Integer capacidad, Integer nivelMinimoReorden) {
-        this.pk = new InventarioDeProductoPK(nombre_bodega, codigoDeBarras_producto);
-        this.costo_promedio = costoPromedio;
+
+    public InventarioDeProducto(Integer cantidad, Integer capacidad, Integer codigo, Integer[] codigo_barra_productos, Integer costo_promedio, Integer nivelminimoreorden) {
         this.cantidad = cantidad;
         this.capacidad = capacidad;
-        this.nivelminimoreorden = nivelMinimoReorden;
+        this.codigo = codigo;
+        this.codigo_barra_productos = codigo_barra_productos;
+        this.costo_promedio = costo_promedio;
+        this.nivelminimoreorden = nivelminimoreorden;
     }
 
-    // Constructor vacio
-    public InventarioDeProducto() {
-        ;
+    public Integer getCodigo() {
+        return codigo;
     }
 
-    // GETTERS
-    public InventarioDeProductoPK getPk() {
-        return pk;
-    }
-
-    public Integer getCostoPromedio() {
+    public Integer getCosto_promedio() {
         return costo_promedio;
     }
 
@@ -49,17 +45,20 @@ public class InventarioDeProducto {
         return capacidad;
     }
 
-    public Integer getNivelMinimoReorden() {
+    public Integer getNivelminimoreorden() {
         return nivelminimoreorden;
     }
 
-    // SETTERS
-    public void setPk(InventarioDeProductoPK pk) {
-        this.pk = pk;
+    public Integer[] getCodigo_barra_productos() {
+        return codigo_barra_productos;
     }
 
-    public void setCostoPromedio(Integer costoPromedio) {
-        this.costo_promedio = costoPromedio;
+    public void setCodigo(Integer codigo) {
+        this.codigo = codigo;
+    }
+
+    public void setCosto_promedio(Integer costo_promedio) {
+        this.costo_promedio = costo_promedio;
     }
 
     public void setCantidad(Integer cantidad) {
@@ -70,7 +69,12 @@ public class InventarioDeProducto {
         this.capacidad = capacidad;
     }
 
-    public void setNivelMinimoReorden(Integer nivelMinimoReorden) {
-        this.nivelminimoreorden = nivelMinimoReorden;
+    public void setNivelminimoreorden(Integer nivelminimoreorden) {
+        this.nivelminimoreorden = nivelminimoreorden;
     }
+
+    public void setCodigo_barra_productos(Integer[] codigo_barra_productos) {
+        this.codigo_barra_productos = codigo_barra_productos;
+    }
+    
 }
