@@ -30,8 +30,7 @@ public class OrdenDeCompraController {
             if (ordenDeCompraRepository.existsById(ordenDeCompra.getCodigo())) {
                 return new ResponseEntity<>("Error: La orden de compra ya existe", HttpStatus.CONFLICT);
             }
-            if (ordenDeCompra.getProveedor_nit() == null || 
-                !ordenDeCompraRepository.existsById(ordenDeCompra.getProveedor_nit())) {
+            if (ordenDeCompra.getProveedor_nit() == null) {
                 return new ResponseEntity<>("Error: El NIT asociado no existe", HttpStatus.BAD_REQUEST);
             }
             if (ordenDeCompra.getSucursal_nombre() == null || ordenDeCompra.getSucursal_nombre().isEmpty()) {
